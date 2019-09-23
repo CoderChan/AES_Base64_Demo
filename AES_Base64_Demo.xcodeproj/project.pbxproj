@@ -14,6 +14,9 @@
 		66A0B3222338BFE500F8CBA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A0B3202338BFE500F8CBA6 /* LaunchScreen.storyboard */; };
 		66A0B3252338BFE500F8CBA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0B3242338BFE500F8CBA6 /* main.m */; };
 		66A0B32F2338BFE500F8CBA6 /* AES_Base64_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0B32E2338BFE500F8CBA6 /* AES_Base64_DemoUITests.m */; };
+		66A0B33D2338C15C00F8CBA6 /* ApiEncryptionTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66A0B33C2338C15C00F8CBA6 /* ApiEncryptionTool.mm */; };
+		66A0B3402338C18900F8CBA6 /* AESTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66A0B33E2338C18900F8CBA6 /* AESTool.cpp */; };
+		66A0B3432338C2CF00F8CBA6 /* Base64Tool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66A0B3412338C2CF00F8CBA6 /* Base64Tool.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		66A0B32A2338BFE500F8CBA6 /* AES_Base64_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AES_Base64_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A0B32E2338BFE500F8CBA6 /* AES_Base64_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AES_Base64_DemoUITests.m; sourceTree = "<group>"; };
 		66A0B3302338BFE500F8CBA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66A0B33B2338C15C00F8CBA6 /* ApiEncryptionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiEncryptionTool.h; sourceTree = "<group>"; };
+		66A0B33C2338C15C00F8CBA6 /* ApiEncryptionTool.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ApiEncryptionTool.mm; sourceTree = "<group>"; };
+		66A0B33E2338C18900F8CBA6 /* AESTool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AESTool.cpp; sourceTree = "<group>"; };
+		66A0B33F2338C18900F8CBA6 /* AESTool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AESTool.hpp; sourceTree = "<group>"; };
+		66A0B3412338C2CF00F8CBA6 /* Base64Tool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Base64Tool.cpp; sourceTree = "<group>"; };
+		66A0B3422338C2CF00F8CBA6 /* Base64Tool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Base64Tool.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		66A0B3142338BFE400F8CBA6 /* AES_Base64_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				66A0B33A2338C11600F8CBA6 /* 加密工具 */,
 				66A0B3392338BFEF00F8CBA6 /* 系统文件 */,
 			);
 			path = AES_Base64_Demo;
@@ -109,6 +119,19 @@
 				66A0B3242338BFE500F8CBA6 /* main.m */,
 			);
 			path = "系统文件";
+			sourceTree = "<group>";
+		};
+		66A0B33A2338C11600F8CBA6 /* 加密工具 */ = {
+			isa = PBXGroup;
+			children = (
+				66A0B33B2338C15C00F8CBA6 /* ApiEncryptionTool.h */,
+				66A0B33C2338C15C00F8CBA6 /* ApiEncryptionTool.mm */,
+				66A0B33F2338C18900F8CBA6 /* AESTool.hpp */,
+				66A0B33E2338C18900F8CBA6 /* AESTool.cpp */,
+				66A0B3422338C2CF00F8CBA6 /* Base64Tool.hpp */,
+				66A0B3412338C2CF00F8CBA6 /* Base64Tool.cpp */,
+			);
+			path = "加密工具";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A0B31A2338BFE400F8CBA6 /* ViewController.m in Sources */,
+				66A0B3402338C18900F8CBA6 /* AESTool.cpp in Sources */,
+				66A0B33D2338C15C00F8CBA6 /* ApiEncryptionTool.mm in Sources */,
 				66A0B3252338BFE500F8CBA6 /* main.m in Sources */,
+				66A0B3432338C2CF00F8CBA6 /* Base64Tool.cpp in Sources */,
 				66A0B3172338BFE400F8CBA6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
