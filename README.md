@@ -1,2 +1,4 @@
 # AES_Base64_Demo
- 由C++编写的高效地用于Xcode工程的AES_Base64加密库
+ Efficient AES_Base64 encryption library for Xcode projects written in C++.
+
+ only for test
